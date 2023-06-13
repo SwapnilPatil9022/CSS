@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box html</title>
+    <!-- Internal Css start -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(134, 241, 134);
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        header>h1{
+            color: blue;
+        }
+        nav{
+            padding: 20px;
+            background-color: rgb(43, 201, 22);
+        }
+        nav>a{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+        }
+        nav>a:hover{
+            color: blue;
+        }
+        #sidebar{
+            height: 200px;
+            /* width: 200px; */
+            margin: 5px;
+            border: 1px solid red;
+            background-color: rgb(134, 241, 134);
+            flex-grow: 2;
+        }
+        #container{
+            height: 200px;
+            /* width: 200px; */
+            margin: 5px;
+            border: 1px solid green;
+            flex-grow: 5;
+        }
+        section{
+            display: flex;
+            /* border: 2px solid blue; */
+        }
+        #container>main{
+            height: 250px;
+            margin: 5px;
+            border: 1px solid white;
+            background-color: rgb(134, 241, 134);;
+        }
+        footer{
+            height: 150px;
+            background-color: rgb(134, 241, 134);
+        }
+    </style>
+    <!-- Internal Css End -->
+</head>
+<body>
+    <header>
+        <h1>WEBx86 Infotech</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Help</a>
+    </nav>
+    <section>
+        <div id="sidebar">
+
+        </div>
+        <section id="container">
+            <div class="main"></div>
+            <div class="main"></div>
+        </section>
+
+    </div>
+    <footer>h</footer>
+</body>
+</html>
