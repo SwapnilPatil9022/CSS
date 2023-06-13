@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment flex</title>
+    <style>
+        body{
+    margin: 0px;
+}
+header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    background-color: rgba(255, 100, 69, 0.87);
+    font-size: 20px;
+}
+#sidebar{
+    border: 1px solid green;
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(163, 32, 54);
+}
+#main{
+    background-color: grey;
+    flex-grow: 15px;
+}
+#container{
+    display: flex;
+}
+#sidebar>a{
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    color: navy;
+}
+Product{
+    border: 1px solid brown;
+    padding: 5px;
+    display: flex;
+}
+.Items{
+    margin: 5pz;
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+}
+    </style>
+    <!-- <link rel="style" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <p>WEBx86 Infotech</p>
+    </header>
+
+    <main id="container">
+        <section id="sidebar">
+
+            
+            <a href="#">Hone</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+
+        </section>
+        <section id="main">
+            <div class="Product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+            <div class="product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+            <div class="product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
