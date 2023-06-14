@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #container{
+            border: 2px solid red;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 250px 250px ;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+            row-gap: 50px;
+
+        }
+        #container>div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid green;
+            margin: 5px;
+        }
+        #Div01{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div id="Div01">Deno Data 01</div>
+        <div>Deno Data 02</div>
+        <div>Deno Data 03</div>
+        <div>Deno Data 04</div>
+        <div>Deno Data 05</div>
+        <div>Deno Data 06</div>
+        <div>Deno Data 07</div>
+        <div>Deno Data 08</div>
+        <div>Deno Data 09</div>
+        <div>Deno Data 10</div>
+        <div>Deno Data 11</div>
+        <div>Deno Data 12</div>
+    </section>
+</body>
+</html>  
