@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Designing</title>
+    <style>
+        /* table,tr,td,th{
+            border: 1px solid;
+            border-collapse: collapse;
+        } */
+        table{
+            width: 50%;
+            margin: auto;
+        }
+        th{
+            height: 40px;
+            background-color: brown;
+            color: white;
+        }
+        td{
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #ccc;
+        }
+        tr:nth-child(odd){
+            background-color: #aaa;
+        }
+        tr:hover{
+            background-color: darkcyan;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Mobile Number</td>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td>Demo Text 01</td>
+            <td>9834572737</td>
+            <td>Karad</td>
+        </tr>
+        <tr>
+            <td>Demo Text 02</td>
+            <td>6343772737</td>
+            <td>Kaead</td>
+        </tr>
+        <tr>
+            <td>Demo Text 03</td>
+            <td>9735672737</td>
+            <td>Pune</td>
+        <tr>
+            <td>Demo Text 04</td>
+            <td>9876572737</td>
+            <td>Mumbai</td>
+        </tr>
+    </table>
+</body>
+</html>
